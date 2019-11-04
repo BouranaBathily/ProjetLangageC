@@ -329,7 +329,7 @@ List* noeud;
 
    strcpy(chaine,"");
 
-   for (i = 0; i < N; i++) {
+   for (int i = 0; i < N; i++) {
 
        char instruction[T];
            // printf("Entrez instructions\n");
