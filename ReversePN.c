@@ -102,19 +102,6 @@ List* push_back_list(List* li, int x)
 
 }
 
-/*---------------------------------------------------------------------*/
-
-// Ajoute  en début de Liste
-
-List* push_front_list(List* li, int x)
-{
-    List* first=cree_list(x);
-
-    first->next=li;
-
-    return first;
-
-}
 
 
 int list_length(List* li)
@@ -140,6 +127,7 @@ return size;
 List* ADD(List* li)
 {
 int s = 0;
+	
 	if(list_length(li) < 2 )
 		return NULL;
     if(li == NULL)
@@ -329,7 +317,7 @@ int main(){
 
 int N;
 
-int i,s;
+int i;
 
 char chaine[CH];
 
@@ -341,7 +329,7 @@ List* noeud;
 
    strcpy(chaine,"");
 
-   for (int i = 0; i < N; i++) {
+   for (i = 0; i < N; i++) {
 
        char instruction[T];
            // printf("Entrez instructions\n");
